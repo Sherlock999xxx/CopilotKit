@@ -15,7 +15,7 @@
     "@copilotkitnext/runtime": "next",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.11.1",
-    "hono": "^4.0.0",
+    "hono": "^4.12.23",
     "next": "^15.0.0",
     "next-mdx-remote": "^5.0.0",
     "react": "^19.0.0",
