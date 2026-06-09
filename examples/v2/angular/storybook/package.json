@@ -38,7 +38,7 @@
     "@types/node": "^22",
     "autoprefixer": "^10.4.21",
     "css-loader": "^7.1.2",
-    "postcss": "^8.4.31",
+    "postcss": "^8.5.10",
     "postcss-loader": "^8.1.1",
     "storybook": "^8",
     "style-loader": "^4.0.0",
