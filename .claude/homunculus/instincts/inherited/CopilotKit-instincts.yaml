@@ -1,0 +1,281 @@
+# Instincts generated from https://github.com/Sherlock999xxx/CopilotKit
+# Generated: 2026-07-10T20:57:24.646Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: CopilotKit-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/CopilotKit
+---
+
+# CopilotKit Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: chore
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: chore(deps): bump the pip group across 10 directories with 8 updates
+
+---
+id: CopilotKit-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/CopilotKit
+---
+
+# CopilotKit Commit Length
+
+## Action
+
+Write moderate-length commit messages (~68 characters)
+
+## Evidence
+
+- Average commit message length: 68 chars
+- Based on 1 commits
+
+---
+id: CopilotKit-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/CopilotKit
+---
+
+# CopilotKit Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: CopilotKit-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/CopilotKit
+---
+
+# CopilotKit Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: CopilotKit-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/CopilotKit
+---
+
+# CopilotKit Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: CopilotKit-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/CopilotKit
+---
+
+# CopilotKit Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: copilotkit-instinct-file-naming
+trigger: "When creating a new file in the codebase"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/CopilotKit
+---
+
+# Copilotkit Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files: camelCase
+
+---
+id: copilotkit-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/CopilotKit
+---
+
+# Copilotkit Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: copilotkit-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/CopilotKit
+---
+
+# Copilotkit Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: copilotkit-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/CopilotKit
+---
+
+# Copilotkit Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: copilotkit-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/CopilotKit
+---
+
+# Copilotkit Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: copilotkit-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/CopilotKit
+---
+
+# Copilotkit Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: copilotkit-instinct-commit-format
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: Sherlock999xxx/CopilotKit
+---
+
+# Copilotkit Instinct Commit Format
+
+## Action
+
+Use the conventional commit format with a prefix (e.g., chore:)
+
+## Evidence
+
+- Pattern in commits.type: conventional
+- Pattern in commits.prefixes: ["chore"]
+- Seen in commit: chore(deps): bump the pip group across 10 directories with 8 updates
+
+---
+id: copilotkit-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: Sherlock999xxx/CopilotKit
+---
+
+# Copilotkit Instinct Test Location
+
+## Action
+
+Place test files in a separate directory from source files
+
+## Evidence
+
+- Pattern in architecture.testLocation: separate
+
